@@ -1,0 +1,31 @@
+---
+import "../styles/global.css";
+import Header from "../components/header.astro";
+
+const PageTitle = "News";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} >
+  </head>
+  <body>
+    <Header />
+		<div class="p-4">
+			<h1 class="text-8xl tracking-widest font-black text-sky-900">{PageTitle}</h1>
+			<h2 class="text-4xl font-extralight text-sky-400">Where the news lives.</h2>
+		</div>
+
+    <main class="p-4">
+      <ul class="text-sky-900 *:first:rounded-t-lg *:last:rounded-b-lg">
+        <li class="mb-1 hover:underline cursor-pointer p-2 border border-black"><a href="/articles/article1">Article 1</a></li>
+        <li class="mb-1 hover:underline cursor-pointer p-2 border border-black"><a href="/articles/article2">Article 2</a></li>
+        <li class="mb-1 hover:underline cursor-pointer p-2 border border-black"><a href="/articles/article3">Article 3</a></li>
+      </ul>
+      <span>I need to learn how to make all that stuff dynamic in the future.</span>
+    </main>
+  </body>
+</html>
