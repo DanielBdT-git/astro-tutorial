@@ -3,6 +3,13 @@
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 import "../styles/global.css"
 import Header from "../components/header.astro"
+
+const PageTitle = "Home";
+const goals = ["reusable layouts","dynamically creating links and pages","the rest of the UI I guess","content management system (can come later)"]
+
+// you can also use {} for hashmaps and use map.array.function instead of array.function inside the code
+// remember to use {condition && element} for if/then
+//  and only use {condition?element:element} for if/then/else
 ---
 
 <!--
@@ -26,5 +33,17 @@ previous content:
 			<h1 class="text-8xl tracking-widest font-black text-sky-900">Astro</h1>
 			<h2 class="text-4xl tracking-tighter font-extralight text-sky-400">I hope this goes well.</h2>
 		</div>
+    <div class="p-4 gap-2">
+      <strong>Goals for this project so far:</strong>
+      {goals.length >=2 && 
+      <ol class="pl-8 list-decimal">
+        {goals.map((item) => 
+          <li class="mt-2">
+            {item}
+          </li>
+        )}
+      </ol>
+      }
+    </div>
   </body>
 </html>
