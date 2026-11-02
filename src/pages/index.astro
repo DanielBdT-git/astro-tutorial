@@ -2,48 +2,33 @@
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 import "../styles/global.css"
-import Header from "../components/header.astro"
+import BaseLayout from "../layouts/baseLayout.astro";
 
 const PageTitle = "Home";
 const goals = ["reusable layouts","dynamically creating links and pages","the rest of the UI I guess","content management system (can come later)"]
 
+
 // you can also use {} for hashmaps and use map.array.function instead of array.function inside the code
+
 // remember to use {condition && element} for if/then
 //  and only use {condition?element:element} for if/then/else
+
+// CSS variables should be a bit easier with Astro
+//  https://docs.astro.build/en/tutorial/2-pages/4/#use-your-first-css-variable
+//  https://docs.astro.build/en/guides/styling/#css-variables
 ---
 
-<!--
-previous content:
-<Layout>
-	<Welcome />
-</Layout>
--->
-
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} >
-    <title>INDEX - PREVIEW</title>
-  </head>
-  <body>
-		<Header />
-		<div class="p-4">
-			<h1 class="text-8xl tracking-widest font-black text-sky-900">Astro</h1>
-			<h2 class="text-4xl tracking-tighter font-extralight text-sky-400">I hope this goes well.</h2>
-		</div>
-    <div class="p-4 gap-2">
-      <strong>Goals for this project so far:</strong>
-      {goals.length >=2 && 
-      <ol class="pl-8 list-decimal">
-        {goals.map((item) => 
-          <li class="mt-2">
-            {item}
-          </li>
-        )}
-      </ol>
-      }
-    </div>
-  </body>
-</html>
+<BaseLayout pageTitle="Astro - Home" pageHeader="Astro Tutorial" pageSubHeader="I hope this goes well...">
+  <div class="p-4 gap-2">
+    <strong>Goals for this project so far:</strong>
+    {goals.length >=2 && 
+    <ol class="pl-8 list-decimal">
+      {goals.map((item) => 
+        <li class="mt-2">
+          {item}
+        </li>
+      )}
+    </ol>
+    }
+  </div>
+</BaseLayout>

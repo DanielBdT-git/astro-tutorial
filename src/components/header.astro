@@ -1,9 +1,39 @@
 ---
-import "../styles/global.css"
+import "../styles/global.css";
+import Social from "./social.astro";
+
+const socialsArray = [
+  {
+    platformURL: 'bsky.app',
+    platform: 'Bluesky',
+    username: '@example.bsky.social'
+  },
+  {
+    platformURL: 'instagram.com',
+    platform: 'Instagram',
+    username: '@example'
+  },
+  {
+    platformURL: 'github.com',
+    platform: 'GitHub',
+    username: 'torvalds'
+  },
+];
 ---
 
-<header class="flex flex-row p-4 gap-2 text-sky-500">
-  <a href="/">Home</a>
-  <a href="/news">News</a>
-  <a href="/about">About</a>
+<header class="static flex flex-row justify-between items-center p-6 bg-sky-200 text-sky-900 text-lg *:flex *:flex-row *:gap-4">
+  <div class="*:hover:underline">
+    <a href="/">Home</a>
+    <a href="/news">News</a>
+    <a href="/about">About</a>
+  </div>
+  <div>
+    {socialsArray.length >=2 && 
+      socialsArray.map((item) =>
+        <li class="list-none hover:underline">
+          <Social platformURL={item.platformURL}, platform={item.platform}, username={item.username}/>
+        </li>
+      )
+    }
+  </div>
 </header>

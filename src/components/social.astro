@@ -1,0 +1,9 @@
+---
+const {platform,platformURL,username}=Astro.props;
+---
+<a
+  href={`https://${platformURL}/${username}`}
+  target="_blank"
+>
+  {platform}
+</a>

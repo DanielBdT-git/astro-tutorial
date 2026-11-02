@@ -26,3 +26,10 @@
 probably figure out a reusable way to write this on every page..
 
 yeah figure out layouts at some point that will help a LOT
+
+Here's what i've learned about layouts:
+
+- add a `<slot />` component to house any child elements
+- you can pass props into layouts to be used in *their* HTML
+
+- 

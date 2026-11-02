@@ -11,3 +11,4 @@ Features
 - article pages
 - table of contents?
 - contact -> story suggestions?
+- accessibility with ARIA
