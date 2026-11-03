@@ -5,6 +5,7 @@ Main technologies:
 
 Elements
 - design main style/layout
+- styles for markdown
 
 Features
 - homepage

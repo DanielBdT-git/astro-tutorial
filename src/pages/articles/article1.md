@@ -1,6 +1,7 @@
 ---
+layout: ../../layouts/markdownPostLayout.astro
 title: 'Example Article'
-date: 2026-10-28
+date: '2026-10-28'
 description: "What I've learned so far"
 author: "Daniel"
 image:

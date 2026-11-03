@@ -1,0 +1,24 @@
+---
+import Header from "../components/header.astro"
+import "../styles/global.css"
+
+const {frontmatter} = Astro.props
+---
+
+<meta charset="UTF-8"/>
+<Header/>
+<div class="p-4 max-w-200">
+  <img
+    src={frontmatter.image.url}
+    alt={frontmatter.image.alt}
+    class="rounded-2xl"
+  />
+</div>
+<div class="p-4">
+  <h1 class="text-sky-900 text-4xl pb-2">{frontmatter.title}</h1>
+  <h2 class="text-sky-500 text-md">written by: {frontmatter.author}</h2>
+  <h2 class="text-sky-500 text-md">published on: {frontmatter.date}</h2>
+</div>
+<article class="prose prose-md p-4">
+  <slot/>
+</article>
