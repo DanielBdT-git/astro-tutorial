@@ -2,15 +2,11 @@
 layout: ../../layouts/markdownPostLayout.astro
 title: 'Example Article'
 date: '2026-10-28'
-description: "What I've learned so far"
 author: "Daniel"
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
-tags: ["astro", "development", "internal"]
 ---
-
-# Example Article
 This will serve as an example news article, which can be written as a markdonwn file.
 
 ## What I've Learned

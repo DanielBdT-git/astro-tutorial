@@ -1,5 +1,6 @@
 ---
 import Header from "../components/header.astro"
+import Prose from "../components/prose.astro"
 import "../styles/global.css"
 
 const {frontmatter} = Astro.props
@@ -20,5 +21,7 @@ const {frontmatter} = Astro.props
   <h2 class="text-sky-500 text-md">published on: {frontmatter.date}</h2>
 </div>
 <article class="prose prose-md p-4">
-  <slot/>
+  <Prose>
+    <slot/>
+  </Prose>
 </article>

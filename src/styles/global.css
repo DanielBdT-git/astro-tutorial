@@ -1,27 +1,56 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
-* {
-  font-family: Libron, serif;
+@theme {
+  --font-sans: Libron, sans-serif; /* putting a sans here that falls back to sans-serif in case user needs sans ig */
+  --font-serif: Libron, serif;
+  --font-code: CourierPrime, monospace;
 }
 
 @font-face {
   font-family: Libron;
   font-weight: normal;
-  src: url(../fonts/Libron-Regular.woff2);
+  src: url(../fonts/Libron-Regular.woff2) format('woff2');
 }
 @font-face {
   font-family: Libron;
   font-weight: bold;
-  src: url(../fonts/Libron-Bold.woff2);
+  src: url(../fonts/Libron-Bold.woff2) format('woff2');
 }
 @font-face {
   font-family: Libron;
   font-style: italic;
-  src: url(../fonts/Libron-Italic.woff2);
+  src: url(../fonts/Libron-Italic.woff2) format('woff2');
 }
 @font-face {
   font-family: Libron;
   font-weight: bold;
   font-style: italic;
-  src: url(../fonts/Libron-BoldItalic.woff2);
+  src: url(../fonts/Libron-BoldItalic.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: CourierPrime;
+  font-weight: normal;
+  src: url(../fonts/CourierPrime-Regular.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: CourierPrime;
+  font-weight: bold;
+  src: url(../fonts/CourierPrime-Bold.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: CourierPrime;
+  font-style: italic;
+  src: url(../fonts/CourierPrime-Italic.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: CourierPrime;
+  font-weight: bold;
+  font-style: italic;
+  src: url(../fonts/CourierPrime-BoldItalic.ttf);
+  font-display: swap;
 }

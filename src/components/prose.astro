@@ -1,0 +1,21 @@
+---
+// for prose, make sure to put the `@plugin "@tailwindcss/typography"` in `global.css`
+// then wrap the <slot/> in <Prose></Prose>
+
+// also maybe make all this consistent to other styles throughout the page
+// maybe define classes in `global.css` that apply to this and other text components
+
+// code stuff (probably wont use in real site) needs `prose-code:before:content-none` and the same for after
+---
+
+<div class="
+  prose dark:prose-invert
+  prose-h1:font-bold prose-h1:text-2xl prose-h1:text-sky-900
+  prose-h2:text-xl prose-h2:text-sky-600
+  prose-li:text-sky-900 prose-li:list-disc
+  prose-p:text-sky-900
+  prose-code:text-slate-500 prose-code:font-code prose-code:before:content-none prose-code:after:content-none prose-code:bg-slate-200 prose-code:rounded-sm prose-code:p-0.5 prose-code:pt-1
+  prose-strong:text-sky-950
+">
+  <slot/>
+</div>
