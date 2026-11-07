@@ -12,8 +12,6 @@ const articleArray = (await getCollection('articles')).sort(
 );
 ---
 
-<!-- TODO: fix error and finish implementing content collection -->
-
 <BaseLayout pageTitle="News" pageHeader="News Articles" pageSubHeader="This is where all the news lives :)">
   <main class="p-4">
     {articleArray.length >= 2 &&
