@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/markdownPostLayout.astro
 title: Article 3
-date: 2022-07-15
+date: 2026-10-20
 author: Astro Learner
 image:
     url: "https://docs.astro.build/assets/rays.webp"

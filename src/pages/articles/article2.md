@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/markdownPostLayout.astro
 title: "Article 2: Electric Boogaloo"
-date: 2022-07-08
+date: 2026-10-18
 author: Astro Learner
 image:
     url: "https://docs.astro.build/assets/arc.webp"

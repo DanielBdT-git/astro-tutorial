@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/markdownPostLayout.astro
 title: 'Example Article'
-date: '2026-10-28'
+date: 2026-10-28
 author: "Daniel"
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
