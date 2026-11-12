@@ -1,0 +1,23 @@
+---
+import BaseLayout from "../layouts/baseLayout.astro";
+import styles from "../styles/wordsearch.css";
+---
+
+<BaseLayout
+  pageTitle="Games"
+  pageHeader="Games"
+  pageSubHeader="This is where I'll test embeds for games :D"
+>
+  <!-- IT'S THIS SIMPLE!!! -->
+  <p>wordsearchlabs.com</p>
+  <iframe
+    src="https://wordsearchlabs.com/embed/1928726"
+    class="w-150 h-200"
+  ></iframe>
+  
+  <p>webwordsearch.com</p>
+  <iframe
+   src="https://webwordsearch.com/share/?data=eyJpZCI6Im13ZDM3NXZ2cTAzd292bm5wIiwiZ3JpZFNpemUiOjEwLCJ0aXRsZSI6InRlc3RpbmciLCJ3b3JkcyI6WyJmaXJzdCIsInNlY29uZCIsInRoaXJkIiwiZm91cnRoIiwiZmlmdGgiLCJzaXh0aCIsInNldmVudGgiXSwic2VlZCI6LTE1Njc2MzQxNDgsImRpcmVjdGlvbnMiOlsiZG93biIsInJpZ2h0IiwiZGlhZ29uYWwtdXAtcmlnaHQiLCJkaWFnb25hbC1kb3duLXJpZ2h0Il0sInJvd3MiOjEwLCJjb2xzIjoxMH0"
+   class="w-150 h-200"
+  ></iframe>
+</BaseLayout>
